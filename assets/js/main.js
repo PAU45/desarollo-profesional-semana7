@@ -94,3 +94,23 @@ form?.addEventListener('submit', e => {
     form.reset();
   }, 1000);
 });
+
+// Intro Overlay (efecto presentación)
+const introOverlay = document.getElementById('introOverlay');
+if (introOverlay) {
+  const already = sessionStorage.getItem('introPlayed');
+  if (already) {
+    introOverlay.style.display = 'none';
+    document.body.setAttribute('data-ready','true');
+  } else {
+    requestAnimationFrame(() => {
+      // Espera breve para asegurar estilos aplicados
+      setTimeout(() => {
+        introOverlay.classList.add('fade-out');
+        document.body.setAttribute('data-ready','true');
+        sessionStorage.setItem('introPlayed','1');
+        setTimeout(() => { introOverlay.remove(); }, 700);
+      }, 1600); // duración visible
+    });
+  }
+}

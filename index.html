@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio | Tu Nombre</title>
+  <title>Portafolio | Paulo Melendez</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="assets/images/favicon-32.png" />
   <meta name="description" content="Portafolio de Paulo Meléndez: Desarrollador Frontend enfocado en accesibilidad, rendimiento y experiencias web modernas." />
   <link rel="canonical" href="https://portafolio-paulo-melendez.netlify.app/" />
   <meta name="author" content="Paulo Meléndez" />
@@ -24,6 +27,13 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <div id="introOverlay" class="intro-overlay" role="dialog" aria-label="Animación de carga" aria-hidden="true">
+    <div class="intro-center">
+      <div class="intro-logo">&lt;Paulo/&gt;</div>
+      <div class="intro-bar" aria-hidden="true"><span></span></div>
+      <p class="intro-tag">Iniciando...</p>
+    </div>
+  </div>
   <a href="#main" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar al contenido principal</a>
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Principal">

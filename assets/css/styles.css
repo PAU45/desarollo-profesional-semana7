@@ -148,6 +148,29 @@ body {
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .fade-in { animation: fadeInUp .6s ease forwards; }
 
+/* Intro Overlay */
+.intro-overlay { position: fixed; inset: 0; background: radial-gradient(circle at 30% 30%, #223140, #0f141a 70%); display: flex; align-items: center; justify-content: center; z-index: 999; overflow: hidden; }
+.intro-center { text-align: center; display: flex; flex-direction: column; gap: 1.1rem; animation: introPop .6s ease; }
+.intro-logo { font-size: clamp(1.8rem,5vw,3rem); font-weight: 700; background: linear-gradient(90deg,var(--color-accent),var(--color-accent-hover)); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -1px; }
+.intro-bar { width: 220px; height: 6px; background: rgba(255,255,255,.08); border-radius: var(--radius-pill); position: relative; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,.05) inset; }
+.intro-bar span { position: absolute; inset: 0; background: linear-gradient(90deg,var(--color-accent),var(--color-accent-hover)); transform: translateX(-100%); animation: introLoad 1.9s cubic-bezier(.6,.04,.3,1) forwards; }
+.intro-tag { font-size: .75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-alt); opacity: .8; animation: fadeIn .8s ease .15s both; }
+.intro-overlay.fade-out { animation: overlayOut .65s ease forwards; }
+
+@keyframes introLoad { 0% { transform: translateX(-100%);} 55% { transform: translateX(0);} 100% { transform: translateX(0);} }
+@keyframes introPop { from { transform: scale(.92) translateY(10px); opacity:0;} to { transform: scale(1) translateY(0); opacity:1;} }
+@keyframes overlayOut { to { opacity:0; visibility:hidden; } }
+@keyframes fadeIn { from { opacity:0;} to { opacity:1;} }
+
+/* Entrance animation for sections after intro */
+body[data-ready="true"] main section { opacity:0; transform: translateY(12px); animation: sectionIn .8s ease forwards; }
+body[data-ready="true"] main section:nth-of-type(1) { animation-delay:.05s; }
+body[data-ready="true"] main section:nth-of-type(2) { animation-delay:.12s; }
+body[data-ready="true"] main section:nth-of-type(3) { animation-delay:.19s; }
+body[data-ready="true"] main section:nth-of-type(4) { animation-delay:.26s; }
+body[data-ready="true"] main section:nth-of-type(5) { animation-delay:.33s; }
+@keyframes sectionIn { to { opacity:1; transform: translateY(0);} }
+
 /* Enhanced Skills Layout */
 /* Simplified skills (solo lo esencial) */
 .skill-card { transition: background var(--transition), border-color var(--transition); }
