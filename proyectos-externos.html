@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos Externos | Paulo Meléndez</title>
+  <meta name="description" content="Proyectos externos de Paulo Meléndez: Django, Python, React y aplicaciones CRUD." />
+  <link rel="canonical" href="https://portafolio-paulo-melendez.netlify.app/proyectos-externos" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Proyectos Externos – Paulo Meléndez" />
+  <meta property="og:description" content="Listado de proyectos externos: CRUDs, Django, Python y frontends en React." />
+  <meta property="og:url" content="https://portafolio-paulo-melendez.netlify.app/proyectos-externos" />
+  <meta property="og:image" content="https://portafolio-paulo-melendez.netlify.app/images/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Proyectos Externos – Paulo Meléndez" />
+  <meta name="twitter:description" content="Explora proyectos construidos con Python, Django, React y más." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .breadcrumb { font-size: .7rem; text-transform: uppercase; letter-spacing: .5px; display: flex; gap: .4rem; margin: 1rem 0 0; }
+    .breadcrumb a { text-decoration: none; color: var(--color-text-alt); }
+    .projects-list { display: grid; gap: 2rem; }
+    .project-extended { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.25rem 1.25rem 1.5rem; display: grid; gap: .75rem; }
+    .project-extended h2 { font-size: 1.25rem; margin: 0; }
+    .project-extended p { margin: 0; font-size: .9rem; color: var(--color-text-alt); }
+    .project-extended .stack { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .project-extended .stack .badge { background: var(--color-bg-alt); }
+    .highlights { list-style: none; padding: 0; margin: .5rem 0 0; display: grid; gap: .35rem; }
+    .highlights li { font-size: .75rem; background: var(--color-bg-alt); border: 1px solid var(--color-border); padding: .4rem .6rem; border-radius: var(--radius-sm); }
+    .project-extended .links { display: flex; gap: .6rem; margin-top: .5rem; }
+    .project-extended .links a { font-size: .7rem; text-decoration: none; font-weight: 600; letter-spacing: .5px; background: var(--color-accent); color: #081018; padding: .45rem .75rem; border-radius: var(--radius-pill); }
+    .project-extended .links a:hover { filter: brightness(1.1); }
+    .filters-bar { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.25rem 0 2rem; }
+    .filters-bar button { font-size: .65rem; letter-spacing: .5px; padding: .45rem .8rem; border-radius: var(--radius-pill); background: var(--color-surface); color: var(--color-text-alt); border: 1px solid var(--color-border); cursor: pointer; }
+    .filters-bar button.active, .filters-bar button:hover { background: var(--color-accent); color: #081018; border-color: var(--color-accent); }
+    .empty { font-size: .8rem; color: var(--color-text-alt); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html" class="logo">&lt;Paulo/&gt;</a>
+      <ul class="nav__list">
+        <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <div class="theme-switch">
+        <input type="checkbox" id="themeToggle" aria-label="Cambiar tema claro/oscuro" />
+        <label for="themeToggle"></label>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="container" style="padding:3.5rem 0 4rem;">
+    <nav aria-label="Ruta" class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><span>Proyectos Externos</span></nav>
+    <header style="margin:1.5rem 0 1.25rem;">
+      <h1 style="margin:0 0 .75rem; font-size:clamp(1.8rem,2.5vw,2.4rem);">Proyectos Externos</h1>
+      <p class="lead" style="max-width:60ch;">Aplicaciones y herramientas desarrolladas fuera del entorno académico interno. Enfocadas en reforzar fundamentos, practicar patrones y aprender nuevas tecnologías.</p>
+    </header>
+    <div class="filters-bar" id="filtersBar" aria-label="Filtrar por tecnología"></div>
+    <div class="projects-list" id="externalProjects" aria-live="polite"></div>
+    <p id="emptyState" class="empty" hidden>No hay proyectos que coincidan con el filtro.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Paulo Meléndez</strong>
+        <p>Desarrollador Frontend.</p>
+      </div>
+      <nav aria-label="Secundario">
+        <ul class="footer-nav">
+          <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="social" aria-label="Redes sociales">
+        <a href="https://github.com/PAU45" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/paulo-melendez/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> Paulo Meléndez.</div>
+  </footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Proyectos Externos – Paulo Meléndez",
+    "url": "https://portafolio-paulo-melendez.netlify.app/proyectos-externos",
+    "about": {
+      "@type": "Person",
+      "name": "Paulo Meléndez"
+    }
+  }
+  </script>
+  <script type="module">
+    const themeToggle = document.getElementById('themeToggle');
+    const isLight = localStorage.getItem('theme') === 'light';
+    if (isLight) document.documentElement.classList.add('light-theme');
+    if (themeToggle) {
+      themeToggle.checked = isLight;
+      themeToggle.addEventListener('change', () => {
+        document.documentElement.classList.toggle('light-theme');
+        localStorage.setItem('theme', document.documentElement.classList.contains('light-theme') ? 'light' : 'dark');
+      });
+    }
+    const listEl = document.getElementById('externalProjects');
+    const filtersBar = document.getElementById('filtersBar');
+    const emptyState = document.getElementById('emptyState');
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+    async function load() {
+      const res = await fetch('data/external-projects.json');
+      const data = await res.json();
+      render(data);
+      buildFilters(data);
+    }
+    function card(p) {
+      const stackBadges = p.stack.map(t => `<span class=\"badge\" title=\"${t}\">${t}</span>`).join('');
+      const highlights = (p.highlights||[]).map(h => `<li>${h}</li>`).join('');
+      return `<article class=\"project-extended\" data-stack='${JSON.stringify(p.stack)}'>
+        <h2>${p.name}</h2>
+        <p>${p.description}</p>
+        <div class=\"stack\">${stackBadges}</div>
+        <ul class=\"highlights\">${highlights}</ul>
+        <div class=\"links\">
+          <a href=\"${p.repo}\" target=\"_blank\" rel=\"noopener\">Código</a>
+        </div>
+      </article>`;
+    }
+    function render(projects) { listEl.innerHTML = projects.map(card).join(''); }
+    function buildFilters(projects) {
+      const tags = [...new Set(projects.flatMap(p => p.stack))].sort();
+      filtersBar.innerHTML = '<button class="active" data-filter="*">Todos</button>' + tags.map(t => `<button data-filter="${t}">${t}</button>`).join('');
+      filtersBar.addEventListener('click', e => {
+        if (e.target.matches('button')) {
+          const f = e.target.dataset.filter;
+            filtersBar.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === e.target));
+            let visible = 0;
+            listEl.querySelectorAll('.project-extended').forEach(card => {
+              const stack = JSON.parse(card.getAttribute('data-stack'));
+              const show = f === '*' || stack.includes(f);
+              card.style.display = show ? '' : 'none';
+              if (show) visible++;
+            });
+            emptyState.hidden = visible !== 0;
+        }
+      });
+    }
+    load();
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Sistema de Gestión de Estudiantes",
+    "description": "CRUD para estudiantes, cursos y calificaciones con Python + SQLite.",
+    "stack": ["Python", "SQLite"],
+    "repo": "https://github.com/PAU45/sistema-de-notas"
+  },
+  {
+    "name": "Encriptador de Textos",
+    "description": "App web que encripta y desencripta texto (HTML, CSS y JavaScript).",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "repo": "https://github.com/PAU45/encriptacion-de-letras"
+  },
+  {
+    "name": "Creador de Facturas",
+    "description": "Aplicación Django para generar facturas y gestionar clientes/productos.",
+    "stack": ["Django", "SQLite", "HTML", "CSS"],
+    "repo": "https://github.com/PAU45/lab06"
+  },
+  {
+    "name": "Sistema de Gestión de Eventos",
+    "description": "Gestión de creación y administración de eventos (Django).",
+    "stack": ["Django", "SQLite", "HTML", "CSS"],
+    "repo": "https://github.com/PAU45/lab07django"
+  },
+  {
+    "name": "Frontend Proyecto Integrador",
+    "description": "Interfaz React + Tailwind de un proyecto integrador modular.",
+    "stack": ["React", "Tailwind", "HTML"],
+    "repo": "https://github.com/PAU45/inicio-front-caserito"
+  },
+  {
+    "name": "Sitio Portafolio",
+    "description": "Este portafolio: estructura accesible y datos dinámicos JSON.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "repo": "https://github.com/PAU45/portafolio"
+  }
+]

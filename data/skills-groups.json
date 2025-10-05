@@ -1,0 +1,12 @@
+{
+  "frontend": ["JavaScript", "React", "HTML5", "CSS", "Tailwind", "Accesibilidad"],
+  "backend": ["Python", "Flask", "Java", "Spring Boot", "Jakarta EE"],
+  "databases": ["PostgreSQL", "SQLite", "MongoDB"],
+  "testing": ["TDD", "Pruebas Unitarias"],
+  "methodologies": ["Scrum", "Kanban", "Gestión de Proyectos"],
+  "infra": ["Linux", "CentOS", "Windows Server", "Networking"],
+  "security": ["Ciberseguridad", "IT Essentials", "Cisco Networking"],
+  "productivity": ["Documentación Técnica", "Git", "Excel", "JSON", "XML"],
+  "soft": ["Resolución de problemas", "Recopilación de información", "Creatividad"],
+  "language": ["Inglés A2"]
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "sistema-gestion-estudiantes",
+    "name": "Sistema de Gestión de Estudiantes",
+    "description": "CRUD completo para estudiantes, cursos y calificaciones usando Python y SQLite.",
+    "details": "Permite registrar, actualizar y eliminar estudiantes, gestionar cursos y calificaciones con persistencia ligera en SQLite.",
+    "stack": ["Python", "SQLite"],
+    "repo": "https://github.com/PAU45/sistema-de-notas",
+    "highlights": [
+      "Arquitectura modular (separación de lógica y datos)",
+      "Validaciones básicas de entrada",
+      "Persistencia ligera sin dependencias externas"
+    ]
+  },
+  {
+    "slug": "encriptador-textos",
+    "name": "Encriptador de Textos",
+    "description": "Aplicación web para encriptar y desencriptar cadenas (HTML, CSS y JS).",
+    "details": "Interfaz simple que transforma texto aplicando reglas de sustitución reversible. Ideal para practicar manipulación del DOM y eventos.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "repo": "https://github.com/PAU45/encriptacion-de-letras",
+    "highlights": [
+      "Algoritmo reversible básico",
+      "UX simple centrada en rapidez de uso"
+    ]
+  },
+  {
+    "slug": "calculadora-python",
+    "name": "Calculadora Python",
+    "description": "Herramienta en Python para operaciones aritméticas básicas.",
+    "details": "Ejercicio de lógica y funciones puras para reforzar control de flujo y modularidad.",
+    "stack": ["Python"],
+    "repo": "https://github.com/PAU45/calculadora-python",
+    "highlights": [
+      "Funciones separadas por operación",
+      "Entrada validada"
+    ]
+  },
+  {
+    "slug": "creador-facturas",
+    "name": "Creador de Facturas",
+    "description": "Aplicación Django para generar y gestionar facturas, productos y clientes.",
+    "details": "CRUD de clientes/productos, cálculo de totales y almacenamiento de facturas con persistencia en SQLite.",
+    "stack": ["Django", "HTML", "CSS", "SQLite"],
+    "repo": "https://github.com/PAU45/lab06",
+    "highlights": [
+      "Modelos relacionales claros",
+      "Templates reutilizables"
+    ]
+  },
+  {
+    "slug": "sistema-gestion-eventos",
+    "name": "Sistema de Gestión de Eventos",
+    "description": "Aplicación Django para administrar eventos y asistentes.",
+    "details": "Gestión de eventos (crear, editar, eliminar) y organización de asistentes con persistencia ligera.",
+    "stack": ["Django", "HTML", "CSS", "SQLite"],
+    "repo": "https://github.com/PAU45/lab07django",
+    "highlights": [
+      "CRUD completo",
+      "Estructura reutilizable (herencia de templates)"
+    ]
+  },
+  {
+    "slug": "frontend-proyecto-integrador",
+    "name": "Frontend Proyecto Integrador",
+    "description": "Interfaz en React + Tailwind para un proyecto integrador modular.",
+    "details": "Componentes reutilizables, estilos utilitarios y estructura escalable para futuras vistas.",
+    "stack": ["React", "Tailwind", "HTML"],
+    "repo": "https://github.com/PAU45/inicio-front-caserito",
+    "highlights": [
+      "Diseño responsivo",
+      "Componentización temprana"
+    ]
+  }
+]

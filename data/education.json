@@ -1,0 +1,20 @@
+[
+  {
+    "program": "Tecnicatura en Diseño y Desarrollo de Software",
+    "institution": "TECSUP",
+    "location": "Lima, Perú",
+    "start": "Mar 2023",
+    "end": "Dic 2025 (en curso)",
+    "focus": ["Programación", "Bases de Datos", "Aplicaciones Web"],
+    "summary": "Formación técnica integral en desarrollo de software con énfasis en fundamentos sólidos, patrones y buenas prácticas." 
+  },
+  {
+    "program": "Front-end (Egresado)",
+    "institution": "Alura Latam",
+    "location": "Remoto",
+    "start": "Jun 2024",
+    "end": "Ene 2025",
+    "focus": ["HTML", "CSS", "JavaScript", "Accesibilidad"],
+    "summary": "Especialización en creación de interfaces accesibles, semántica y optimización de experiencia de usuario." 
+  }
+]

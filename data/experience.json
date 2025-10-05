@@ -1,0 +1,16 @@
+[
+  {
+    "role": "Desarrollador Frontend",
+    "company": "Empresa Tech",
+    "start": "2023",
+    "end": "2025",
+    "summary": "Implementación de componentes reutilizables y optimización de rendimiento (reducción de TTI 35%)."
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "Startup X",
+    "start": "2022",
+    "end": "2023",
+    "summary": "Desarrollo de API y SPA para gestión interna con despliegues automatizados CI/CD."
+  }
+]

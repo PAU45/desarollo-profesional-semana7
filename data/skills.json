@@ -1,0 +1,74 @@
+[
+  {
+    "name": "JavaScript / Frontend",
+    "level": "Intermedio-Avanzado",
+    "description": "Desarrollo de interfaces dinámicas, lógica de componentes y buenas prácticas de accesibilidad.",
+    "tools": ["ES2023", "DOM", "Fetch", "Eventos", "Accesibilidad"]
+  },
+  {
+    "name": "React & Ecosistema",
+    "level": "Intermedio",
+    "description": "Componentización, hooks, estado y estilos modernos.",
+    "tools": ["Hooks", "Context", "React Router", "TailwindCSS", "Vite"]
+  },
+  {
+    "name": "HTML & Semántica",
+    "level": "Avanzado",
+    "description": "Estructuras accesibles, rendimiento inicial y SEO técnico básico.",
+    "tools": ["HTML5", "SEO básico", "Etiquetas semánticas", "ARIA"]
+  },
+  {
+    "name": "CSS / UI",
+    "level": "Intermedio-Avanzado",
+    "description": "Diseño responsive, layouts modernos y utilidades.",
+    "tools": ["Flexbox", "Grid", "Animaciones", "BEM", "Tailwind"]
+  },
+  {
+    "name": "Backend / Python & Java",
+    "level": "Intermedio",
+    "description": "Aplicaciones simples, APIs y lógica de negocio básica.",
+    "tools": ["Python", "Flask", "Java", "Spring Boot", "Jakarta EE"]
+  },
+  {
+    "name": "Bases de Datos",
+    "level": "Intermedio",
+    "description": "Modelado relacional y consultas esenciales.",
+    "tools": ["PostgreSQL", "SQLite", "MongoDB", "Consultas SQL"]
+  },
+  {
+    "name": "Testing & Calidad",
+    "level": "En progreso",
+    "description": "Fundamentos de pruebas unitarias y TDD básico.",
+    "tools": ["TDD", "Pruebas Unitarias", "Refactorización"]
+  },
+  {
+    "name": "Metodologías & Gestión",
+    "level": "Intermedio",
+    "description": "Organización de trabajo y colaboración.",
+    "tools": ["Scrum", "Kanban", "Gestión de Proyectos"]
+  },
+  {
+    "name": "Infraestructura & Sistemas",
+    "level": "Básico-Intermedio",
+    "description": "Fundamentos de servidores y sistemas operativos.",
+    "tools": ["Linux", "CentOS", "Windows Server", "Networking básico"]
+  },
+  {
+    "name": "Seguridad & Redes",
+    "level": "Básico",
+    "description": "Principios iniciales de ciberseguridad y redes.",
+    "tools": ["Ciberseguridad", "IT Essentials", "Cisco Networking", "Firewall básico"]
+  },
+  {
+    "name": "Productividad & Herramientas",
+    "level": "Intermedio",
+    "description": "Herramientas de soporte al desarrollo y documentación.",
+    "tools": ["Documentación técnica", "Git", "Excel", "JSON", "XML"]
+  },
+  {
+    "name": "Idiomas",
+    "level": "A2 (Inglés)",
+    "description": "Comunicación básica escrita y lectura técnica.",
+    "tools": ["Inglés A2"]
+  }
+]

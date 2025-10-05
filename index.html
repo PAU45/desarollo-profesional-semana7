@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Tu Nombre</title>
+  <meta name="description" content="Portafolio de Paulo Meléndez: Desarrollador Frontend enfocado en accesibilidad, rendimiento y experiencias web modernas." />
+  <link rel="canonical" href="https://portafolio-paulo-melendez.netlify.app/" />
+  <meta name="author" content="Paulo Meléndez" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Portafolio Paulo Meléndez" />
+  <meta property="og:title" content="Paulo Meléndez – Desarrollador Frontend" />
+  <meta property="og:description" content="Proyectos, experiencia y contacto. Desarrollo web con foco en accesibilidad y rendimiento." />
+  <meta property="og:url" content="https://portafolio-paulo-melendez.netlify.app/" />
+  <meta property="og:image" content="https://portafolio-paulo-melendez.netlify.app/images/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Paulo Melendez – Desarrollador Frontend" />
+  <meta name="twitter:description" content="Construyo interfaces accesibles y de alto rendimiento." />
+  <meta name="twitter:image" content="https://portafolio-paulo-melendez.netlify.app/images/preview.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar al contenido principal</a>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Principal">
+      <a href="#top" class="logo" aria-label="Ir al inicio">&lt;paulito_god/&gt;</a>
+      <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú" id="navToggle">☰</button>
+      <ul class="nav__list" id="navList">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+  <li><a href="#educacion">Educación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="theme-switch" title="Cambiar tema">
+        <input type="checkbox" id="themeToggle" aria-label="Cambiar tema claro/oscuro" />
+        <label for="themeToggle"></label>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-label="Presentación">
+      <div class="hero__content">
+        <h1><span class="accent">Paulo Meléndez</span> – Desarrollador Frontend</h1>
+        <p class="hero__subtitle">Accesibilidad · Rendimiento · Experiencia de Usuario <span id="typewriter"></span></p>
+        <p class="hero__text">Creo interfaces web modernas, escalables y centradas en el usuario. Me enfoco en código mantenible, buenas prácticas y medición continua de rendimiento.</p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn primary">Ver proyectos</a>
+          <a href="#contacto" class="btn outline">Contactar</a>
+        </div>
+      </div>
+      <picture class="hero__image" aria-hidden="true">
+        <img src="assets\images\foto_paulo.jpg" alt="Foto de Paulo Meléndez" loading="eager" decoding="async" />
+      </picture>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="sobreMiHeading">
+      <div class="container">
+        <h2 id="sobreMiHeading" class="section__title">Sobre mí</h2>
+        <p class="lead">Breve descripción personal enfocada en tu propuesta de valor, especialidades y motivaciones.</p>
+        <div class="grid about-grid">
+          <div>
+            <h3>Perfil</h3>
+            <p>Soy un desarrollador orientado a resultados con experiencia en construir aplicaciones modernas utilizando tecnologías web...</p>
+          </div>
+          <div>
+            <h3>Actualmente</h3>
+            <ul class="list-badge">
+              <li>Aprendiendo sobre performance web</li>
+              <li>Experimentando con Web Components</li>
+              <li>Contribuyendo a proyectos Open Source</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Intereses</h3>
+            <ul class="list-badge">
+              <li>UX Engineering</li>
+              <li>Accesibilidad</li>
+              <li>DevOps ligero</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills" aria-labelledby="skillsHeading">
+      <div class="container">
+        <h2 id="skillsHeading" class="section__title">Skills</h2>
+        <div id="skillsContainer" class="skills-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos" aria-labelledby="projectsHeading">
+      <div class="container">
+        <h2 id="projectsHeading" class="section__title">Proyectos</h2>
+  <p class="lead" style="margin-top:-.75rem;margin-bottom:1.5rem;">Muestra breve de proyectos. Más en <a href="proyectos-externos.html">Proyectos Externos</a>.</p>
+        <div class="filters" id="projectFilters" aria-label="Filtros de proyectos"></div>
+        <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="educacion" aria-labelledby="educationHeading">
+      <div class="container">
+        <h2 id="educationHeading" class="section__title">Educación y Formación</h2>
+        <p class="lead" style="margin-top:-.5rem;margin-bottom:1.75rem;">Actualmente en etapa formativa. Aún sin experiencia laboral formal, pero construyendo proyectos y fortaleciendo bases técnicas.</p>
+        <ol class="timeline" id="educationTimeline" aria-live="polite"></ol>
+      </div>
+    </section>
+
+    <section class="section" id="contacto" aria-labelledby="contactHeading">
+      <div class="container">
+        <h2 id="contactHeading" class="section__title">Contacto</h2>
+        <p class="lead">¿Tienes una idea o vacante? Hablemos.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required minlength="2" />
+            <span class="error" data-for="name"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <span class="error" data-for="message"></span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar</button>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>&lt;paulito_god/&gt;</strong>
+        <p>Construyendo experiencias web de calidad.</p>
+      </div>
+      <nav aria-label="Secundario">
+        <ul class="footer-nav">
+          <li><a href="#top">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="social" aria-label="Redes sociales">
+        <a href="https://github.com/PAU45" aria-label="GitHub" rel="noopener" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/paulo-melendez/" aria-label="LinkedIn" rel="noopener" target="_blank">LinkedIn</a>
+        <a href="mailto:paulo.melendez@tecsup.edu.pe" aria-label="Email">Email</a>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> Tu Nombre. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="assets/js/dataLoader.js" type="module"></script>
+  <script src="assets/js/main.js" type="module"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paulo Meléndez",
+    "jobTitle": "Desarrollador Frontend",
+    "url": "https://portafolio-paulo-melendez.netlify.app/",
+    "image": "https://portafolio-paulo-melendez.netlify.app/images/profile.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/paulo-melendez/",
+      "https://github.com/PAU45"
+    ],
+    "knowsAbout": ["JavaScript", "Frontend", "React", "Accesibilidad Web"],
+    "description": "Desarrollador Frontend que crea interfaces accesibles y de alto rendimiento."
+  }
+  </script>
+</body>
+</html>
